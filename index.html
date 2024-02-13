@@ -20,7 +20,7 @@
         <div class="flex flex-col md:flex-row">
             <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 <!-- triangle card -->
-                <div class="  card w-96 bg-base-100 shadow-xl">
+                <div id="triangle" class="  card w-96 bg-base-100 shadow-xl">
                     <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Triangle</h2>
@@ -41,13 +41,18 @@
                 </div>
                 <!-- rectangular card -->
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area(A) = w x l</p>
+                        <div>
+                            <input id="rectangle-base" class="w-24 p-4 rounded-md text-xl" type="text" placeholder="w">
+                            <span class="ml-4 mr-2">cm</span>
+                            <input id="rectangle-height" class="w-24 p-4 rounded-md text-xl" type="text" placeholder="l">
+                            <span class="ml-4 mr-2">cm</span>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateRectangularArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -115,6 +120,7 @@
 
 
     <script src="JS Script/triangle-calc.js"></script>
+    <script src="JS Script/rectengular-calc.js"></script>
 </body>
 
 </html>
